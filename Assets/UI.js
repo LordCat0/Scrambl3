@@ -60,25 +60,6 @@ FileInputButton.addEventListener('input', function(event){
         return;
     }
     document.querySelector("form").setAttribute("disabled", '')
-    //ProcessFile(event.target.files[0]).then((output) => Downl(output, event.target.files[0].name))
-    /*
-    ProcessFile(event.target.files[0]).then((output) => {
-        const read = (blob) => {
-            const reader = new FileReader()
-            reader.onloadend = () => {
-                window.open(`https://turbowarp.org?project_url=${reader.result}`)
-            }
-            reader.readAsDataURL(blob)
-        }
-        read(output)
-        
-    })
-    */
-    ProcessFile(event.target.files[0])
-    /* const getfile = new FileReader()
-        getfile.onload = function(loaded){
-            Obf(getfile.result).then((output) => Downl(output, "Output.sb3"))
-        }
-    Output(`Processing ${FileInputButton.files[0].name}...`, "Title")
-    getfile.readAsText(FileInputButton.files[0]) */
+    ProcessFile(event.target.files[0]).then((output) => Downl(output, event.target.files[0].name))
+    //ProcessFile(event.target.files[0])
 })
