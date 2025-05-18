@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrambl3 - Sb3 Obfuscator</title>
+    <link rel="icon" href="cat.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="Dependencies/jszip.min.js"></script>
+    <script src="Scripts/Main.js"></script>
+    <script defer src="Scripts/UI.js"></script>
+</head>
+<body>
+    <noscript><h1>Please enable javascript!</h1></noscript>
+    <main hidden>
+        <div class="">
+        <h1 style="margin-bottom: 2px;">Scrambl3</h1>
+        <span style="font-size: 13px;">Version 1.0</span>
+        <p>Makes scratch code a little harder to read by changing variable, list, sound, custom block, and sprite names.</p>
+        </div>
+        <form>
+            <label for="FileInput">Load Project</label>
+            <input id="FileInput" type="file" accept=".sb3, .pmp">
+            <div>
+                <label for="ChangeVar">Change Variable/Monitor names</label>
+                <input checked id="ChangeVar" type="checkbox">
+            </div>
+            <div>
+                <label for="ChangeList">Change List names</label>
+                <input checked id="ChangeList" type="checkbox">
+            </div>
+            <div>
+                <label for="ChangeCustomBlock">Change custom block names</label>
+                <input checked id="ChangeCustomBlock" type="checkbox">
+            </div>
+            <!--
+            Very buggy, not yet fully implemented
+            <div>
+                <label for="ChangeBroadcasts">Change broadcast names</label>
+                <input id="ChangeBroadcasts" type="checkbox">
+            </div>
+            -->
+            <div>
+                <label for="ChangeSounds">Change sound names</label>
+                <input id="ChangeSounds" type="checkbox">
+            </div>
+            <div>
+                <label for="ChangeSprites">Change sprite names</label>
+                <input id="ChangeSprites" type="checkbox">
+            </div>
+        </form>
+        <p class="Warning">
+            ⚠️NOTICE: This does NOT provide full security to your project, all this does is make it a little harder to read.
+        </p>
+        <p class="Notice">
+            Made by <a href="https://discord.com/users/1164322893438648401">Lord cat</a>. Unpackager Protector is not affiliated with Scratch, Turbowarp, or PenguinMod. (This website was designed to look like <a href="https://turbowarp.github.io/unpackager/">Turbowarps unpackager.</a>)
+        </p>
+        <h2>Supported Project Types</h2>
+        <p>All scratch-like projects should work (Including .pmp)</p>
+        <h2>Privacy</h2>
+        <p>Files are processed locally on your computer and never sent to any server.</p>
+    </main>
+</body>
+</html>
